@@ -1,0 +1,118 @@
+/* Updated CSS with earthy color palette and unique font family */
+
+body {
+    font-family: 'Cormorant Garamond', serif; /* New unique font family */
+    margin: 0;
+    padding: 0;
+    background-color: #F2E9E1; /* Earthy background color */
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style: none;
+    background-color: #8D6E63; /* Earthy brown color */
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF8E1; /* Light earthy color for text */
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #D7CCC8; /* Slightly lighter brown on hover */
+}
+
+/* Section Styling */
+section {
+    background-color: #E0C9A6; /* Light earthy beige */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+section h1, section h2, section h3 {
+    color: #4E342E; /* Dark earthy brown for headings */
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif; /* Consistent font for headings */
+}
+
+section p {
+    color: #6D4C41; /* Medium earthy brown for paragraphs */
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Image Styling */
+section img {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Button Styling */
+button {
+    background-color: #8D6E63;
+    color: #FFF8E1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7B5E57;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #8D6E63;
+    color: #FFF8E1;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #D7CCC8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    footer {
+        position: static;
+        width: auto;
+    }
+}

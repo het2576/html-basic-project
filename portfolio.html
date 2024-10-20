@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index1.html">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h1>My Portfolio</h1>
+        <a href="https://linkedin.com/in/hetlimbachiya25/" target="_blank">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGyD3751mLcPQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711480042587?e=1734566400&v=beta&t=3M3rGBLmOvKmhHBdjIPh03ZtGLZI91NXGJuEhss1mis" alt="Profile Logo" height="90">
+        </a>
+        <hr>
+        <h2>Het Limbachiya</h2>
+        <p>Hello! I am Het, a passionate Web Developer. Welcome to my portfolio webpage where I showcase my skills and projects.</p>
+        <p>
+            <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, dolore neque! Nihil cum cumque a necessitatibus error itaque reprehenderit, sapiente assumenda porro fugiat cupiditate deleniti alias nam officiis illum ea! Ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore fuga quia et! Facere nam dolore aliquam modi sint explicabo blanditiis corrupti ad saepe culpa ullam, unde est quidem! Sed.</i>
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <hr>
+        <h3>My Skills</h3>
+        <ul style="display: flex; justify-content: center; gap: 15px;">
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="HTML" height="30"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" height="30"></li>
+            <li><img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript" height="30"></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s" alt="React" height="30"></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python" height="30"></li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <hr>
+        <h3>My Projects</h3>
+        <ul style="text-align: center;">
+            <li><a href="https://github.com/het2576/Library_Managenent_System/blob/main/LibraryManagement.c" target="_blank">Library Management System</a></li>
+            <li><a href="https://github.com/het2576/Login_and_Register/blob/main/Register.cpp" target="_blank">Login and Register System</a></li>
+            <li><a href="https://github.com/het2576/Codsoft/blob/main/ToDoList.cpp" target="_blank">To-Do List</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <hr>
+        <h3>Contact Me</h3>
+        <p>Email: <a href="mailto:hetlimbachiya257@gmail.com">hetlimbachiya257@gmail.com</a></p>
+        <p>Phone: <a href="tel:9033309480">9033309480</a></p><br></br>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Het Limbachiya. All rights reserved.</p>
+    </footer>
+
+    <!-- Smooth Scrolling for Navigation -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
